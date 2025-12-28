@@ -97,6 +97,30 @@ export const questions = [
         style: "question-1-choice",
         correct: ["Bataille pour la terre du milieu"]
     },
+        {
+        id: 14,
+        question: "C'est quoi la partie de son corps que Julien prefère chez lui ?", 
+        type: "multiple-choice",
+        options: ["Pecs", "Visage", "Dos", "Bras", "Jambes", "Yeux"], 
+        style: "question-1-choice",
+        correct: ["Bras"]
+    },
+    {
+        id: 15,
+        question: "C'est quoi la qualité chez toi que Julien trouve la plus mignonne?", 
+        type: "multiple-choice",
+        options: ["Ton style", "Ton humour", "Ton Charme", "Ta présence pour les autres", "Ton honnêteté (bienveillante)", "Ta douceur"], 
+        style: "question-1-choice",
+        correct: ["Ta présence pour les autres","Ton Charme"]
+    },
+    {
+        id: 16,
+        question: "C'est quel forme d'amour que julien préfère donné / recevoir ?", 
+        type: "multiple-choice",
+        options: ["Calin", "Temps de qualité", "Mots d'amour", "Service rendu", "Cadeaux", "Attention portée"], 
+        style: "question-1-choice",
+        correct: ["Calin" , "Attention portée"]
+    },
     {
         id: 17,
         question: "C'est quoi le réseau social sur lequel toi et Julien avais commencé à flirter",
@@ -116,7 +140,7 @@ export const questions = [
         id: 19,
         question: "Julien trans fem elle s'appelerai comment ?",
         type: "multiple-choice",
-        options: ["Irene", "Elea", "Leila", "Enora", "Anna", ""], 
+        options: ["Irene", "Elea", "Leila", "Enora", "Anna", "Emma"], 
         style: "question-1-choice",
         correct: ["Irene"]
     },
