@@ -87,7 +87,7 @@ export const questions = [
         type: "multiple-choice",
         options: ["Slave et Nedim", "Bob Lennon", "Dany Caligula", "Siphano", "Raz 404", "Usul"], 
         style: "question-1-choice",
-        correct: ["Yuricha"]
+        correct: ["Dany Caligula"]
     },
     {
         id: 13,

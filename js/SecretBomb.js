@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const firstQuestion = 0;
         console.log("Démarrage du quiz");
         currentQuestionCounter = firstQuestion;
-        showQuestion(firstQuestion);
-        // testEndGame();
+        // showQuestion(firstQuestion);
+        testEndGame();
     });
 
 
@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return str.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     }
 
-    // function testEndGame(){
-    //     rate = 1;
-    //     lunchEndGame();
-    // }
+    function testEndGame(){
+        rate = 15;
+        lunchEndGame();
+    }
 
     function test(txt) {
         const reponse = normalize(txt);
