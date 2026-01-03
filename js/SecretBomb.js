@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Démarrage du quiz");
         currentQuestionCounter = firstQuestion;
         showQuestion(firstQuestion);
+        // testEndGame();
     });
 
 
@@ -25,6 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function normalize(str) {
         return str.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     }
+
+    // function testEndGame(){
+    //     rate = 1;
+    //     lunchEndGame();
+    // }
 
     function test(txt) {
         const reponse = normalize(txt);
@@ -51,10 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function lunchEndGame() {
-        // saveResult(rate);
-
         mainContent.innerHTML = "";
-        mainContent.className = "";
 
         const h2 = document.createElement("h2");
         h2.className = "final-title";
@@ -69,23 +72,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         switch (true) {
             case (rate >= 0 && rate <= 5):
-                p_rate_comment.textContent = "😅 Bon… on va dire que tu peux faire mieux hein !";
+                p_rate_comment.textContent = "Bon en vrai c'est un peu grave... mais disons que tu plein de choses à découvrir sur moi !";
                 break;
 
             case (rate >= 6 && rate <= 10):
-                p_rate_comment.textContent = "🙂 Pas mal, tu connais un peu mais y’a encore du boulot !";
+                p_rate_comment.textContent = "C'est ok en vrai genre il y a des questions dur mais t'aurais pu faire mieux !";
                 break;
 
             case (rate >= 11 && rate <= 15):
-                p_rate_comment.textContent = "🥰 Tu connais vraiment bien, je suis trop fière de toi !";
+                p_rate_comment.textContent = "C'est bien ! tu me connais plutôt bien !";
                 break;
 
-            case (rate >= 16 && rate <= 18):
-                p_rate_comment.textContent = "😍 Excellent ! Tu me connais presque par cœur !";
+            case (rate >= 16 && rate <= 17):
+                p_rate_comment.textContent = "Très bien tu me connais super bien hihihi bien joué pepette !";
                 break;
-
+            case (rate >= 18 && rate <= 19):
+                p_rate_comment.textContent = "Excellent ! Tu t'es super bien débrouillé et tu me connais vraiment très bien !";
+                break;
             case (rate >= 19 && rate <= 20):
-                p_rate_comment.textContent = "💖 Parfait ! Tu es officiellement la personne qui me connaît le mieux au monde !";
+                p_rate_comment.textContent = "Parfait ! C'est hyper stylé tu as tout réussi u can have a very big kiss.";
                 break;
 
             default:
